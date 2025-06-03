@@ -29,7 +29,7 @@
   margin-top: 2rem;
 }
 
-.expense-lista {
+.expense-list {
   list-style: none;
   padding: 0;
 }
@@ -90,4 +90,43 @@
 
 .btn-excluir:hover {
   background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .menu button {
+    width: 100%;
+  }
+
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .expense-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .expense-edit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn-editar,
+  .btn-excluir,
+  .btn-salvar,
+  .btn-cancelar {
+    width: 100%;
+  }
 }

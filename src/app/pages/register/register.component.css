@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 420px;
   margin: 50px auto;
@@ -5,9 +16,7 @@
   background-color: #ffffff;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
-  box-sizing: border-box;
 }
 
 .container h2 {
@@ -34,16 +43,19 @@ form input[type="password"] {
   border: 1.8px solid #ccd6f6;
   border-radius: 8px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
   outline-offset: 2px;
-  box-sizing: border-box;
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="password"]:focus {
+form input:focus {
   border-color: #3b82f6;
   box-shadow: 0 0 6px #3b82f6aa;
+  background-color: #f9fbff;
+}
+
+/* 🔴 Validação Visual */
+input.ng-invalid.ng-touched {
+  border-color: #e74c3c;
 }
 
 .error {
@@ -95,6 +107,7 @@ p a:hover {
   text-decoration: underline;
 }
 
+/* 📱 Responsivo */
 @media (max-width: 480px) {
   .container {
     margin: 30px 15px;

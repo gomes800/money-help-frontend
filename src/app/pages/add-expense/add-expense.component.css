@@ -80,3 +80,24 @@ select option {
   padding: 8px;
 }
 
+@media (max-width: 500px) {
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .menu button {
+    width: 100%;
+  }
+}
